@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Skyrise Construction Infra — Build Your Dream With Us | skyriseconstructioninfra.com</title>
+<meta name="description" content="Skyrise Construction Infra — India's premium construction company. 500+ landmark projects. Residential, Commercial, Industrial. Call +91 99620 74257"/>
+<meta name="keywords" content="skyrise construction infra, skyriseconstructioninfra.com, premium construction india, residential commercial industrial builder"/>
+<meta property="og:title" content="Skyrise Construction Infra — Build Your Dream With Us"/>
+<meta property="og:description" content="India's premier premium construction partner. 500+ projects. 20+ years. ISO certified. Call +91 99620 74257"/>
+<meta property="og:url" content="https://www.skyriseconstructioninfra.com"/>
+<link rel="canonical" href="https://www.skyriseconstructioninfra.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --cream:#FAF8F5;--white:#FFF;--charcoal:#111110;--c2:#1C1C1A;--dark:#2A2A27;
+  --gold:#C9963A;--gold2:#E8B458;--gp:#F5E8D0;--stone:#E8E3DA;--muted:#888880;
+  --green:#25d366;--border:rgba(0,0,0,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden;}
+::selection{background:var(--gold);color:#fff;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--cream);}::-webkit-scrollbar-thumb{background:var(--gold);}
+a{text-decoration:none;color:inherit;}
+
+/* LOADER */
+#loader{position:fixed;inset:0;background:var(--charcoal);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .8s .2s;}
+#loader.out{opacity:0;pointer-events:none;}
+.ld-t{font-family:'Cormorant Garamond',serif;color:#fff;font-size:clamp(40px,9vw,96px);font-weight:300;letter-spacing:8px;transform:translateY(110%);animation:rise 1s cubic-bezier(.16,1,.3,1) .3s forwards;overflow:hidden;}
+.ld-d{color:var(--gold);font-size:11px;letter-spacing:3px;text-transform:uppercase;opacity:0;animation:fi .8s ease 1.1s forwards;margin-top:8px;}
+.ld-b{width:60px;height:1px;background:var(--gold);margin:26px auto 0;transform:scaleX(0);transform-origin:left;animation:lg 1.2s ease 1s forwards;}
+@keyframes rise{to{transform:translateY(0);}}@keyframes fi{to{opacity:1;}}@keyframes lg{to{transform:scaleX(1);}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:22px 5%;display:flex;align-items:center;justify-content:space-between;transition:all .5s;}
+nav.solid{background:rgba(250,248,245,.97);backdrop-filter:blur(20px);padding:14px 5%;border-bottom:1px solid var(--border);box-shadow:0 4px 30px rgba(0,0,0,.04);}
+.nb{display:flex;align-items:center;gap:12px;}
+.nlogo{width:36px;height:36px;background:var(--charcoal);border-radius:7px;display:flex;align-items:center;justify-content:center;transition:.3s;}
+nav.solid .nlogo{background:var(--gold);}
+.nlogo svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.nbrand .n1{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:#fff;letter-spacing:1.5px;line-height:1;transition:.3s;}
+nav.solid .n1{color:var(--charcoal);}
+.nbrand .n2{color:rgba(255,255,255,.35);font-size:9px;letter-spacing:2px;transition:.3s;}
+nav.solid .n2{color:var(--gold);}
+.nlinks{display:flex;align-items:center;gap:26px;list-style:none;}
+.nlinks a{font-size:11.5px;font-weight:500;letter-spacing:.8px;color:rgba(255,255,255,.75);text-transform:uppercase;transition:.3s;position:relative;}
+.nlinks a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:.35s;}
+.nlinks a:not(.ncta):hover::after{width:100%;}
+nav.solid .nlinks a{color:var(--dark);}
+.ncta{background:var(--gold)!important;color:#fff!important;padding:10px 22px;border-radius:2px;font-weight:600!important;}
+.ncta:hover{background:var(--charcoal)!important;}
+.ncta::after{display:none!important;}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hbg span{width:23px;height:1.5px;background:#fff;transition:.3s;}
+nav.solid .hbg span{background:var(--charcoal);}
+.mmenu{display:none;position:fixed;inset:0;background:rgba(17,17,16,.98);z-index:998;flex-direction:column;align-items:center;justify-content:center;gap:28px;}
+.mmenu.show{display:flex;}
+.mmenu a{font-family:'Cormorant Garamond',serif;font-size:30px;color:#fff;font-weight:300;letter-spacing:2px;transition:.3s;}
+.mmenu a:hover{color:var(--gold);}
+
+/* HERO */
+#hero{height:100vh;min-height:700px;background:#08080f;position:relative;display:flex;align-items:flex-end;overflow:hidden;}
+.sky{position:absolute;inset:0;background:radial-gradient(ellipse at 65% 0%,#180d38,#06060f 55%,#000);}
+.stars{position:absolute;inset:0;}
+.star{position:absolute;border-radius:50%;background:#fff;animation:twk linear infinite;}
+@keyframes twk{0%,100%{opacity:.07;}50%{opacity:1;}}
+.aurora{position:absolute;inset:0;overflow:hidden;}
+.ab{position:absolute;width:500px;height:100%;background:linear-gradient(100deg,transparent 38%,rgba(201,150,58,.06) 50%,rgba(201,150,58,.1) 55%,rgba(201,150,58,.05) 62%,transparent 72%);animation:sw 9s ease-in-out infinite;}
+@keyframes sw{0%,100%{transform:translateX(-300px) skewX(-10deg);}50%{transform:translateX(700px) skewX(-10deg);}}
+.aglow{position:absolute;top:0;right:8%;width:480px;height:380px;background:radial-gradient(ellipse,rgba(201,150,58,.16),transparent 70%);animation:br 6s ease-in-out infinite;}
+@keyframes br{0%,100%{opacity:.6;transform:scale(1);}50%{opacity:1;transform:scale(1.18);}}
+.moon{position:absolute;top:7%;right:14%;width:52px;height:52px;background:radial-gradient(circle at 38% 38%,#fff9e8,#fde68a);border-radius:50%;box-shadow:0 0 36px rgba(253,230,138,.5),0 0 72px rgba(253,230,138,.18);animation:mf 14s ease-in-out infinite;}
+@keyframes mf{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+.fog{position:absolute;bottom:56%;left:-10%;width:120%;height:140px;background:linear-gradient(to right,transparent,rgba(255,255,255,.025) 30%,rgba(255,255,255,.038) 50%,rgba(255,255,255,.025) 70%,transparent);border-radius:50%;animation:fg 20s linear infinite;}
+.fog2{animation-duration:28s;animation-delay:-12s;bottom:50%;opacity:.5;}
+@keyframes fg{0%{transform:translateX(0);}100%{transform:translateX(5%);}}
+.gg{position:absolute;bottom:0;left:0;right:0;height:160px;background:linear-gradient(to top,rgba(201,150,58,.15),transparent);}
+.fps{position:absolute;inset:0;pointer-events:none;}
+.fp{position:absolute;border-radius:50%;animation:fpup linear infinite;}
+@keyframes fpup{from{transform:translateY(100vh) rotate(0);opacity:0;}8%{opacity:1;}92%{opacity:.5;}to{transform:translateY(-80px) rotate(720deg);opacity:0;}}
+.cw{position:absolute;bottom:0;left:0;right:0;height:86%;transform:rotateX(3.5deg);transform-origin:bottom center;}
+.cw svg{width:100%;height:100%;}
+.crane-g{animation:cs 7s ease-in-out infinite;}
+@keyframes cs{0%,100%{transform:rotate(0);}50%{transform:rotate(1.2deg);transform-origin:490px 660px;}}
+.wb1{animation:wbl 3s ease-in-out infinite;}
+.wb2{animation:wbl 4.5s ease-in-out infinite .8s;}
+.wb3{animation:wbl 5.5s ease-in-out infinite 1.8s;}
+@keyframes wbl{0%,100%{opacity:.9;}48%,52%{opacity:.05;}}
+.hc{position:relative;z-index:10;padding:0 5% 106px;width:100%;}
+.hey{display:flex;align-items:center;gap:14px;margin-bottom:22px;opacity:0;animation:hf .9s .5s forwards;}
+.hey-line{width:34px;height:1px;background:var(--gold);}
+.hey span{color:var(--gold);font-size:10.5px;letter-spacing:4px;text-transform:uppercase;font-weight:500;}
+.hh1{font-family:'Cormorant Garamond',serif;color:#fff;font-size:clamp(50px,7.5vw,106px);font-weight:300;line-height:1;letter-spacing:-2px;margin-bottom:28px;opacity:0;animation:hf .9s .7s forwards;}
+.hh1 em{color:var(--gold);font-style:italic;}
+.hh1 .sub{display:block;font-size:clamp(26px,4vw,56px);color:rgba(255,255,255,.4);font-family:'Inter',sans-serif;letter-spacing:4px;font-weight:300;margin-top:4px;}
+.hp{color:rgba(255,255,255,.5);font-size:16px;line-height:1.8;max-width:470px;margin-bottom:42px;font-weight:300;opacity:0;animation:hf .9s .9s forwards;}
+.hbtns{display:flex;gap:13px;flex-wrap:wrap;opacity:0;animation:hf .9s 1.1s forwards;}
+@keyframes hf{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:translateY(0);}}
+.btn-g{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;padding:16px 38px;font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;transition:all .35s;border:none;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-g:hover{background:var(--gold2);transform:translateY(-3px);box-shadow:0 14px 38px rgba(201,150,58,.4);}
+.btn-s{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;padding:16px 38px;font-size:11.5px;font-weight:500;letter-spacing:2px;text-transform:uppercase;border:1px solid rgba(255,255,255,.2);transition:all .35s;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-s:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.06);}
+.sbar{position:absolute;bottom:0;left:0;right:0;background:rgba(10,10,16,.78);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.07);display:grid;grid-template-columns:repeat(4,1fr);}
+.hs{padding:24px 16px;border-right:1px solid rgba(255,255,255,.07);text-align:center;}
+.hs:last-child{border:none;}
+.hs-n{font-family:'Cormorant Garamond',serif;color:#fff;font-size:38px;font-weight:400;line-height:1;display:block;}
+.hs-l{color:rgba(255,255,255,.33);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-top:5px;}
+
+/* MARQUEE */
+.mq{background:var(--gold);padding:13px 0;overflow:hidden;}
+.mq-t{display:flex;white-space:nowrap;animation:mq 26s linear infinite;}
+.mi{display:inline-flex;align-items:center;gap:18px;padding:0 22px;font-size:10.5px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.82);}
+.md{width:4px;height:4px;background:rgba(255,255,255,.45);border-radius:50%;}
+@keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* COMMONS */
+section{padding:110px 5%;}
+.label{display:inline-flex;align-items:center;gap:12px;color:var(--gold);font-size:10.5px;font-weight:600;letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;}
+.label::before{content:'';width:28px;height:1px;background:var(--gold);}
+.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4.5vw,62px);font-weight:300;line-height:1.08;color:var(--charcoal);}
+.h2 em{color:var(--gold);font-style:italic;}
+.h2w{color:#fff;}
+.bt{color:var(--muted);font-size:15.5px;line-height:1.85;font-weight:300;max-width:520px;}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+.rv.in{opacity:1;transform:translateY(0);}
+.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}.d4{transition-delay:.4s;}.d5{transition-delay:.5s;}
+
+/* ABOUT */
+#about{background:#fff;}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px;}
+.av{position:relative;}
+.am{background:var(--charcoal);height:490px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.ap{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,.03) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,.03) 40px);}
+.ai{font-size:96px;position:relative;z-index:1;animation:bb 4s ease-in-out infinite;}
+@keyframes bb{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.ac{color:rgba(255,255,255,.2);font-size:9px;letter-spacing:4px;text-transform:uppercase;margin-top:14px;position:relative;z-index:1;}
+.fb{position:absolute;background:#fff;padding:18px 24px;box-shadow:0 18px 55px rgba(0,0,0,.13);}
+.fb1{bottom:-24px;right:-24px;}
+.fb2{top:-18px;left:-18px;background:var(--gold);}
+.fbn{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;color:var(--charcoal);display:block;line-height:1;}
+.fb2 .fbn{color:#fff;}
+.fbl{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:4px;}
+.fb2 .fbl{color:rgba(255,255,255,.7);}
+.feats{display:flex;flex-direction:column;gap:10px;margin:26px 0 34px;}
+.feat{display:flex;align-items:flex-start;gap:13px;padding:15px 17px;background:var(--cream);border-left:2px solid transparent;transition:.3s;}
+.feat:hover{border-left-color:var(--gold);background:var(--gp);}
+.fi{width:32px;height:32px;background:var(--charcoal);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+.fc strong{display:block;font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:2px;}
+.fc span{font-size:12.5px;color:var(--muted);}
+
+/* SERVICES */
+#services{background:var(--cream);}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;margin-bottom:50px;}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--stone);}
+.sc{background:#fff;padding:40px 32px;position:relative;overflow:hidden;transition:all .4s;cursor:default;}
+.sc::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--gold);transition:.4s;}
+.sc:hover{background:var(--charcoal);transform:translateY(-4px);box-shadow:0 28px 55px rgba(0,0,0,.2);}
+.sc:hover::after{width:100%;}
+.sc:hover .st,.sc:hover .sd,.sc:hover .sa{color:#fff!important;}
+.sc:hover .sn{color:rgba(255,255,255,.05);}
+.sc:hover .sic{background:var(--gold);}
+.sn{font-family:'Cormorant Garamond',serif;font-size:66px;font-weight:300;color:rgba(0,0,0,.05);line-height:1;position:absolute;top:12px;right:18px;transition:.4s;}
+.sic{width:48px;height:48px;background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:22px;transition:.4s;}
+.st{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--charcoal);margin-bottom:11px;line-height:1.2;transition:.3s;}
+.sd{font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:18px;transition:.3s;}
+.sa{font-size:11.5px;color:var(--gold);font-weight:600;letter-spacing:.8px;transition:.3s;}
+
+/* NUMBERS */
+#numbers{background:var(--charcoal);}
+.nl{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.ng{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(255,255,255,.04);margin-top:36px;}
+.nc{background:var(--c2);padding:32px;border:1px solid rgba(255,255,255,.04);transition:.3s;}
+.nc:hover{background:rgba(201,150,58,.08);border-color:rgba(201,150,58,.2);}
+.ncv{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--gold);display:block;line-height:1;margin-bottom:6px;}
+.ncl{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:2px;text-transform:uppercase;}
+.wl{display:flex;flex-direction:column;gap:14px;}
+.wr{display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);transition:.3s;}
+.wr:hover{background:rgba(201,150,58,.06);border-color:rgba(201,150,58,.14);}
+.wn{font-family:'Cormorant Garamond',serif;font-size:26px;color:rgba(201,150,58,.35);font-weight:300;flex-shrink:0;width:34px;line-height:1;}
+.wt h4{color:#fff;font-size:14px;font-weight:600;margin-bottom:4px;}
+.wt p{color:rgba(255,255,255,.33);font-size:13px;line-height:1.65;}
+
+/* PORTFOLIO */
+#portfolio{background:#fff;}
+.ph{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;margin-bottom:36px;}
+.pfs{display:flex;gap:0;border:1px solid var(--stone);margin-bottom:32px;width:fit-content;flex-wrap:wrap;}
+.pf{padding:10px 22px;font-size:11px;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--muted);border:none;cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;border-right:1px solid var(--stone);transition:.3s;}
+.pf:last-child{border:none;}
+.pf.on,.pf:hover{background:var(--charcoal);color:#fff;}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.pc{position:relative;overflow:hidden;cursor:pointer;background:var(--stone);}
+.pci{height:280px;display:flex;align-items:center;justify-content:center;font-size:65px;transition:.6s;}
+.pw{overflow:hidden;}
+.pc:hover .pci{transform:scale(1.06);}
+.po{position:absolute;inset:0;background:linear-gradient(to top,rgba(17,17,16,.96),rgba(17,17,16,.08));opacity:0;transition:.4s;display:flex;align-items:flex-end;padding:24px;}
+.pc:hover .po{opacity:1;}
+.pinf{transform:translateY(13px);transition:.4s;}
+.pc:hover .pinf{transform:none;}
+.pcat{color:var(--gold);font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:5px;}
+.pname{font-family:'Cormorant Garamond',serif;color:#fff;font-size:20px;font-weight:400;margin-bottom:3px;}
+.ploc{color:rgba(255,255,255,.5);font-size:12px;}
+.pfoot{background:var(--cream);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--stone);}
+.pfoot span{font-size:12px;color:var(--muted);}
+.pfoot button{background:var(--charcoal);color:#fff;border:none;padding:7px 18px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;transition:.3s;}
+.pfoot button:hover{background:var(--gold);}
+
+/* PROCESS */
+#process{background:var(--cream);}
+.prg{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--stone);margin-top:64px;}
+.sb{background:#fff;padding:38px 30px;position:relative;transition:.4s;overflow:hidden;}
+.sb:hover{background:var(--charcoal);}
+.sb:hover .sbt,.sb:hover .sbd{color:#fff;}
+.sb:hover .sbn{color:rgba(255,255,255,.05);}
+.sb:hover .sbbar{background:var(--gold);}
+.sbn{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:300;color:rgba(0,0,0,.04);line-height:1;position:absolute;top:12px;right:16px;transition:.3s;}
+.sbbar{width:28px;height:2px;background:var(--gold);margin-bottom:22px;transition:.3s;}
+.sbt{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--charcoal);margin-bottom:10px;transition:.3s;}
+.sbd{font-size:13px;color:var(--muted);line-height:1.7;transition:.3s;}
+
+/* TESTIMONIALS */
+#testimonials{background:var(--c2);}
+.th{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;margin-bottom:50px;}
+.tctrl{display:flex;gap:10px;}
+.tb{width:42px;height:42px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:#fff;cursor:pointer;font-size:16px;transition:.3s;display:flex;align-items:center;justify-content:center;}
+.tb:hover{background:var(--gold);border-color:var(--gold);}
+.ts{overflow:hidden;}
+.tt{display:flex;gap:16px;transition:transform .6s cubic-bezier(.16,1,.3,1);}
+.tc{min-width:calc(50% - 8px);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);padding:36px;transition:.35s;flex-shrink:0;}
+.tc:hover{background:rgba(255,255,255,.07);border-color:rgba(201,150,58,.2);}
+.tcs{color:var(--gold);font-size:13px;letter-spacing:3px;margin-bottom:18px;}
+.tcq{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;color:rgba(255,255,255,.7);line-height:1.72;margin-bottom:24px;font-style:italic;}
+.tcd{width:34px;height:1px;background:rgba(255,255,255,.1);margin-bottom:20px;}
+.tca{display:flex;align-items:center;gap:13px;}
+.tcav{width:40px;height:40px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:18px;color:#fff;font-weight:600;flex-shrink:0;}
+.tcn{color:#fff;font-weight:600;font-size:13.5px;}
+.tcr{color:rgba(255,255,255,.32);font-size:11.5px;margin-top:2px;}
+.tdots{display:flex;gap:7px;margin-top:28px;}
+.tdot{width:24px;height:2px;background:rgba(255,255,255,.15);cursor:pointer;transition:.3s;}
+.tdot.on{background:var(--gold);width:48px;}
+
+/* CAREERS */
+#careers{background:#fff;}
+.carg{display:grid;grid-template-columns:1fr 1.5fr;gap:70px;margin-top:60px;align-items:start;}
+.perks{display:flex;flex-direction:column;gap:10px;margin:22px 0 28px;}
+.perk{display:flex;align-items:center;gap:12px;padding:13px 16px;background:var(--cream);border-left:2px solid var(--gold);}
+.pi{font-size:16px;}
+.pt{font-size:13.5px;color:var(--charcoal);font-weight:500;}
+.jobs{display:flex;flex-direction:column;gap:12px;}
+.jc{background:var(--cream);padding:24px 26px;border:1px solid var(--stone);transition:.35s;position:relative;overflow:hidden;cursor:pointer;}
+.jc::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gold);transition:.35s;}
+.jc:hover{border-color:var(--gold);transform:translateX(5px);}
+.jc:hover::before{width:3px;}
+.jt{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:8px;}
+.jti{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;color:var(--charcoal);line-height:1.1;}
+.jb{background:var(--gp);color:var(--gold);font-size:10px;font-weight:700;letter-spacing:1.5px;padding:4px 12px;text-transform:uppercase;border:1px solid rgba(201,150,58,.3);white-space:nowrap;}
+.jm{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px;}
+.jtag{font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.jd{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:14px;}
+.ja{font-size:11.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:6px;transition:.3s;}
+.ja:hover{color:var(--charcoal);}
+.cjcta{background:var(--charcoal);padding:30px 26px;margin-top:12px;text-align:center;}
+.cjcta strong{color:#fff;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;display:block;margin-bottom:6px;}
+.cjcta p{color:rgba(255,255,255,.45);font-size:13px;margin-bottom:16px;}
+
+/* CTA BANNER */
+#ctaban{background:var(--gold);padding:88px 5%;position:relative;overflow:hidden;}
+#ctaban::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0,rgba(255,255,255,.04) 1px,transparent 1px,transparent 22px);}
+.ctaf{display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap;position:relative;z-index:1;}
+.ctaf h2{font-family:'Cormorant Garamond',serif;color:#fff;font-size:clamp(32px,4.5vw,58px);font-weight:300;line-height:1.1;margin-bottom:10px;}
+.ctaf p{color:rgba(255,255,255,.7);font-size:15px;font-weight:300;}
+.ctabtns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-wh{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--gold);padding:16px 36px;font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:.35s;border:none;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-wh:hover{background:var(--charcoal);color:#fff;transform:translateY(-2px);}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;padding:16px 36px;font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;border:1px solid rgba(255,255,255,.4);transition:.35s;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-wa:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+
+/* CONTACT */
+#contact{background:var(--cream);}
+.cong{display:grid;grid-template-columns:1fr 1.5fr;gap:80px;margin-top:60px;}
+.ci-list{display:flex;flex-direction:column;}
+.ci{padding:22px 0;border-bottom:1px solid var(--stone);display:flex;align-items:flex-start;gap:16px;}
+.ci:last-child{border:none;}
+.cii{width:36px;height:36px;background:var(--charcoal);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.ci h4{font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--charcoal);margin-bottom:5px;}
+.ci p{font-size:14px;color:var(--muted);line-height:1.6;}
+.ci a{color:var(--gold);font-weight:500;}
+.fbox{background:var(--charcoal);padding:48px 42px;}
+.fbox h3{font-family:'Cormorant Garamond',serif;color:#fff;font-size:32px;font-weight:300;margin-bottom:5px;}
+.fbox .fsb{color:rgba(255,255,255,.3);font-size:13px;margin-bottom:32px;}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.fg{display:flex;flex-direction:column;gap:7px;margin-bottom:13px;}
+.fg label{color:rgba(255,255,255,.38);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;}
+.fg input,.fg select,.fg textarea{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#fff;padding:13px 16px;font-size:14px;font-family:'Inter',sans-serif;transition:.3s;outline:none;-webkit-appearance:none;}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.2);}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold);background:rgba(201,150,58,.05);}
+.fg select option{background:#1C1C1A;}
+.fg textarea{resize:vertical;min-height:110px;}
+.fbtn{width:100%;background:var(--gold);color:#fff;padding:16px;border:none;font-size:11.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;font-family:'Inter',sans-serif;transition:.35s;margin-top:4px;}
+.fbtn:hover{background:var(--gold2);}
+.fdone{display:none;text-align:center;padding:64px 36px;background:var(--charcoal);}
+.fdone .fdi{font-size:50px;margin-bottom:16px;}
+.fdone h4{font-family:'Cormorant Garamond',serif;color:#fff;font-size:26px;font-weight:300;margin-bottom:8px;}
+.fdone p{color:rgba(255,255,255,.38);font-size:14px;line-height:1.7;}
+
+/* FOOTER */
+footer{background:var(--charcoal);padding:75px 5% 28px;}
+.ftg{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:45px;padding-bottom:52px;border-bottom:1px solid rgba(255,255,255,.06);}
+.fl{font-family:'Cormorant Garamond',serif;color:#fff;font-size:18px;font-weight:300;letter-spacing:3px;display:block;margin-bottom:4px;}
+.fd{color:var(--gold);font-size:9px;letter-spacing:2px;margin-bottom:16px;display:block;}
+.fa{color:rgba(255,255,255,.28);font-size:13px;line-height:1.8;font-weight:300;margin-bottom:22px;}
+.socials{display:flex;gap:7px;}
+.soc{width:34px;height:34px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:13px;transition:.3s;}
+.soc:hover{background:var(--gold);border-color:var(--gold);}
+.fcol h5{color:rgba(255,255,255,.32);font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.06);}
+.flinks{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.flinks a{color:rgba(255,255,255,.38);font-size:13px;font-weight:300;transition:.3s;}
+.flinks a:hover{color:var(--gold);padding-left:5px;}
+.fbot{padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.fbot p{color:rgba(255,255,255,.2);font-size:11.5px;}
+.fcerts{display:flex;gap:10px;}
+.cert{border:1px solid rgba(255,255,255,.1);padding:5px 12px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.22);}
+
+/* ══════════════════════════════════════════
+   FLOATING BUTTONS
+══════════════════════════════════════════ */
+.float-stack{position:fixed;bottom:26px;right:22px;display:flex;flex-direction:column;align-items:center;gap:11px;z-index:800;}
+.wa-fab{width:54px;height:54px;background:var(--green);display:flex;align-items:center;justify-content:center;box-shadow:0 7px 25px rgba(37,211,102,.45);transition:.35s;position:relative;}
+.wa-fab::before{content:'';position:absolute;inset:-5px;border:1.5px solid rgba(37,211,102,.28);border-radius:50%;animation:wap 2.5s ease-out infinite;}
+@keyframes wap{0%{transform:scale(1);opacity:.8;}100%{transform:scale(1.6);opacity:0;}}
+.wa-fab:hover{transform:scale(1.1);}
+.wa-fab svg{width:27px;height:27px;fill:#fff;}
+.chat-fab{width:54px;height:54px;background:var(--charcoal);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 7px 25px rgba(0,0,0,.3);border:none;font-size:21px;transition:.35s;}
+.chat-fab:hover{background:var(--gold);transform:scale(1.1);}
+.chat-fab .notif{position:absolute;top:-4px;right:-4px;width:16px;height:16px;background:red;border-radius:50%;font-size:9px;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;animation:notifPulse 2s infinite;}
+@keyframes notifPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.2);}}
+
+/* ══════════════════════════════════════════
+   AI CHATBOT — FULL FEATURED
+══════════════════════════════════════════ */
+.chatbot{position:fixed;bottom:146px;right:22px;width:360px;background:#fff;box-shadow:0 28px 75px rgba(0,0,0,.22);z-index:850;transform:scale(0) translateY(22px);transform-origin:bottom right;opacity:0;transition:all .38s cubic-bezier(.34,1.56,.64,1);pointer-events:none;display:flex;flex-direction:column;max-height:580px;}
+.chatbot.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all;}
+.cb-head{background:linear-gradient(135deg,var(--charcoal),#2a2a27);padding:16px 18px;display:flex;align-items:center;gap:12px;flex-shrink:0;}
+.cb-av{width:38px;height:38px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;border-radius:50%;}
+.cb-inf{flex:1;}
+.cb-inf h4{color:#fff;font-size:14px;font-weight:600;}
+.cb-status{color:rgba(255,255,255,.4);font-size:10.5px;display:flex;align-items:center;gap:5px;}
+.cb-status.typing-st{color:var(--gold);}
+.cb-status::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%;flex-shrink:0;animation:stpulse 2s infinite;}
+@keyframes stpulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.cb-mode{background:rgba(255,255,255,.1);color:rgba(255,255,255,.6);border:none;padding:5px 10px;font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;font-family:'Inter',sans-serif;transition:.3s;}
+.cb-mode.ai-on{background:var(--gold);color:#fff;}
+.cb-x{background:rgba(255,255,255,.1);border:none;color:#fff;width:27px;height:27px;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;transition:.3s;flex-shrink:0;}
+.cb-x:hover{background:rgba(255,255,255,.2);}
+.cb-body{padding:15px;flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:10px;min-height:200px;}
+.cb-body::-webkit-scrollbar{width:3px;}
+.cb-body::-webkit-scrollbar-thumb{background:var(--gold);}
+.msg{max-width:88%;padding:11px 14px;font-size:13px;line-height:1.6;animation:mpop .3s ease;border-radius:2px;}
+@keyframes mpop{from{opacity:0;transform:translateY(7px);}to{opacity:1;transform:translateY(0);}}
+.bot{background:var(--cream);color:var(--charcoal);align-self:flex-start;border-left:2px solid var(--gold);}
+.usr{background:var(--charcoal);color:#fff;align-self:flex-end;}
+.ai-badge{font-size:9px;color:var(--gold);display:block;margin-top:5px;font-weight:600;letter-spacing:1px;}
+.typing-msg{display:flex;align-items:center;gap:4px;padding:11px 14px;background:var(--cream);align-self:flex-start;width:52px;border-left:2px solid var(--gold);}
+.typing-msg span{width:6px;height:6px;background:var(--muted);border-radius:50%;animation:td .9s infinite;}
+.typing-msg span:nth-child(2){animation-delay:.15s;}
+.typing-msg span:nth-child(3){animation-delay:.3s;}
+@keyframes td{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+/* Quick Reply Buttons */
+.cb-qr{padding:3px 11px 11px;display:flex;flex-wrap:wrap;gap:6px;flex-shrink:0;}
+.qr{background:transparent;border:1px solid var(--stone);color:var(--charcoal);padding:7px 12px;font-size:12px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;transition:.3s;border-radius:50px;}
+.qr:hover{background:var(--charcoal);color:#fff;border-color:var(--charcoal);}
+.qr.gold{border-color:var(--gold);color:var(--gold);}
+.qr.gold:hover{background:var(--gold);color:#fff;}
+/* Lead capture */
+.cb-lead{padding:10px 14px;background:var(--gp);border-top:1px solid rgba(201,150,58,.2);flex-shrink:0;}
+.cb-lead p{font-size:11px;color:var(--gold);font-weight:600;margin-bottom:8px;letter-spacing:.5px;}
+.cb-lead input{width:100%;border:1px solid rgba(201,150,58,.3);background:#fff;padding:9px 12px;font-size:12.5px;font-family:'Inter',sans-serif;outline:none;margin-bottom:6px;color:var(--charcoal);}
+.cb-lead input:focus{border-color:var(--gold);}
+.cb-lead button{width:100%;background:var(--gold);color:#fff;border:none;padding:9px;font-size:11.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;font-family:'Inter',sans-serif;transition:.3s;}
+.cb-lead button:hover{background:var(--charcoal);}
+/* Input row */
+.cb-inp{display:flex;gap:7px;padding:10px 11px;border-top:1px solid var(--stone);flex-shrink:0;}
+.cb-text{flex:1;border:1px solid var(--stone);padding:10px 13px;font-size:13px;font-family:'Inter',sans-serif;outline:none;transition:.3s;color:var(--charcoal);}
+.cb-text:focus{border-color:var(--gold);}
+.cb-send{background:var(--gold);border:none;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:14px;flex-shrink:0;transition:.3s;}
+.cb-send:hover{background:var(--charcoal);}
+
+/* ══════════════════════════════════════════
+   PROACTIVE APPROACH POPUP
+══════════════════════════════════════════ */
+.approach-popup{position:fixed;bottom:218px;right:22px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.18);z-index:799;width:280px;transform:translateX(100%) scale(.9);transform-origin:bottom right;opacity:0;transition:all .5s cubic-bezier(.34,1.56,.64,1);pointer-events:none;border-left:4px solid var(--gold);}
+.approach-popup.show{transform:translateX(0) scale(1);opacity:1;pointer-events:all;}
+.ap-head{background:var(--charcoal);padding:12px 14px;display:flex;align-items:center;gap:8px;}
+.ap-av{width:30px;height:30px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+.ap-name{color:#fff;font-size:12.5px;font-weight:600;}
+.ap-role{color:rgba(255,255,255,.4);font-size:10px;}
+.ap-x{margin-left:auto;background:none;border:none;color:rgba(255,255,255,.5);cursor:pointer;font-size:14px;}
+.ap-body{padding:16px;}
+.ap-body p{font-size:13px;color:var(--charcoal);line-height:1.6;margin-bottom:12px;}
+.ap-body strong{color:var(--gold);}
+.ap-btns{display:flex;flex-direction:column;gap:6px;}
+.ap-btn{padding:9px 14px;font-size:12px;font-weight:600;cursor:pointer;transition:.3s;border:none;font-family:'Inter',sans-serif;text-align:center;}
+.ap-btn.primary{background:var(--gold);color:#fff;}
+.ap-btn.primary:hover{background:var(--charcoal);}
+.ap-btn.secondary{background:var(--cream);color:var(--charcoal);border:1px solid var(--stone);}
+.ap-btn.secondary:hover{background:var(--stone);}
+.ap-timer{width:100%;height:3px;background:var(--stone);margin-top:12px;}
+.ap-timer-fill{height:100%;background:var(--gold);animation:timerFill 12s linear forwards;}
+@keyframes timerFill{from{width:100%;}to{width:0%;}}
+
+/* WA Tooltip */
+.wa-tip{position:fixed;bottom:26px;right:84px;background:#fff;padding:12px 15px;box-shadow:0 10px 36px rgba(0,0,0,.14);z-index:801;border-left:3px solid var(--green);animation:tipIn .5s ease;}
+@keyframes tipIn{from{opacity:0;transform:translateX(14px);}to{opacity:1;transform:translateX(0);}}
+.wa-tip p{font-size:12.5px;color:var(--charcoal);font-weight:600;margin-bottom:2px;}
+.wa-tip span{font-size:11px;color:var(--muted);}
+.wa-tip-x{position:absolute;top:6px;right:8px;background:none;border:none;cursor:pointer;color:var(--muted);font-size:13px;}
+
+/* AI Mode indicator */
+.ai-indicator{background:linear-gradient(135deg,#1a0533,#2d0a5e);padding:6px 12px;display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.ai-dot{width:6px;height:6px;background:#a855f7;border-radius:50%;animation:aipulse 1.5s infinite;}
+@keyframes aipulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.ai-label{color:rgba(255,255,255,.6);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;}
+.ai-label strong{color:#a855f7;}
+
+/* RESPONSIVE */
+@media(max-width:1060px){.sg,.prg{grid-template-columns:1fr 1fr;}.pg{grid-template-columns:1fr 1fr;}.ftg{grid-template-columns:1fr 1fr;}.ag,.nl,.cong,.carg{grid-template-columns:1fr;}.fb1{right:0;bottom:-18px;}.fb2{left:0;top:-16px;}}
+@media(max-width:768px){section{padding:85px 5%;}.nlinks{display:none;}.hbg{display:flex;}.sbar{grid-template-columns:1fr 1fr;}.sg,.prg,.pg{grid-template-columns:1fr;}.fr{grid-template-columns:1fr;}.fbox{padding:32px 22px;}.ctaf{flex-direction:column;text-align:center;}.ctabtns{justify-content:center;}.tc{min-width:85vw;}.chatbot{width:300px;right:12px;}.approach-popup{width:260px;right:12px;}.float-stack{right:12px;bottom:16px;}}
+@media(max-width:480px){.sbar{grid-template-columns:1fr 1fr;}.ftg{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-t">SKYRISE</div>
+  <div class="ld-d">skyriseconstructioninfra.com · Est. 2004</div>
+  <div class="ld-b"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nb">
+    <div class="nlogo"><svg viewBox="0 0 24 24"><path d="M3 21h18M3 7l9-4 9 4M4 7v14M20 7v14M8 21v-4a4 4 0 018 0v4"/></svg></div>
+    <div class="nbrand"><div class="n1">SKYRISE</div><div class="n2">skyriseconstructioninfra.com</div></div>
+  </a>
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Projects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="ncta">Free Quote</a></li>
+  </ul>
+  <div class="hbg" id="hbg" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mmenu" id="mmenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#portfolio" onclick="closeMenu()">Projects</a>
+  <a href="#careers" onclick="closeMenu()">Careers</a>
+  <a href="#contact" onclick="closeMenu()" style="color:var(--gold)">Get a Quote →</a>
+</div>
+
+<!-- HERO 3D -->
+<section id="hero">
+  <div class="sky"></div>
+  <div class="moon"></div>
+  <div class="aurora"><div class="ab"></div><div class="aglow"></div></div>
+  <div class="stars" id="starsW"></div>
+  <div class="fps" id="fpsW"></div>
+  <div class="fog"></div><div class="fog fog2"></div>
+  <div class="gg"></div>
+  <div class="cw">
+    <svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bg1" x1="0%"y1="0%"x2="0%"y2="100%"><stop offset="0%" stop-color="#252538"/><stop offset="100%" stop-color="#0a0a16"/></linearGradient>
+        <linearGradient id="bg2" x1="0%"y1="0%"x2="0%"y2="100%"><stop offset="0%" stop-color="#1c1c2e"/><stop offset="100%" stop-color="#070710"/></linearGradient>
+        <linearGradient id="bg3" x1="0%"y1="0%"x2="0%"y2="100%"><stop offset="0%" stop-color="#20202e"/><stop offset="100%" stop-color="#09090f"/></linearGradient>
+        <linearGradient id="gg2" x1="0%"y1="0%"x2="0%"y2="100%"><stop offset="0%" stop-color="#E8B458"/><stop offset="100%" stop-color="#C9963A"/></linearGradient>
+        <linearGradient id="sr" x1="0%"y1="0%"x2="100%"y2="0%"><stop offset="0%" stop-color="rgba(201,150,58,0.1)"/><stop offset="100%" stop-color="rgba(0,0,0,0.35)"/></linearGradient>
+        <filter id="gf"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="gf2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <rect x="0" y="658" width="1440" height="42" fill="#07070e"/>
+      <rect x="0" y="656" width="1440" height="4" fill="rgba(201,150,58,0.35)"/>
+      <ellipse cx="720" cy="665" rx="620" ry="18" fill="rgba(201,150,58,0.1)"/>
+      <!-- Far background -->
+      <rect x="0" y="410" width="110" height="250" fill="rgba(18,18,30,0.5)" rx="1"/>
+      <rect x="100" y="360" width="85" height="300" fill="rgba(16,16,26,0.5)" rx="1"/>
+      <rect x="1250" y="390" width="95" height="270" fill="rgba(18,18,30,0.5)" rx="1"/>
+      <rect x="1340" y="350" width="100" height="310" fill="rgba(16,16,26,0.5)" rx="1"/>
+      <!-- Left cluster -->
+      <rect x="30" y="300" width="95" height="360" fill="url(#bg2)" rx="1"/>
+      <rect x="135" y="240" width="115" height="420" fill="url(#bg1)" rx="1"/>
+      <polygon points="250,240 280,262 280,660 250,660" fill="rgba(201,150,58,0.06)"/>
+      <!-- Tower 1 -->
+      <rect x="305" y="70" width="135" height="590" fill="url(#bg1)" rx="1"/>
+      <polygon points="440,70 476,96 476,660 440,660" fill="url(#sr)"/>
+      <polygon points="372,70 368,0 376,0" fill="url(#gg2)" filter="url(#gf2)"/>
+      <rect x="308" y="63" width="135" height="9" fill="rgba(201,150,58,0.45)" rx="1"/>
+      <g fill="rgba(255,245,195,0.52)" class="wb1"><rect x="320" y="88" width="13" height="17" rx="1"/><rect x="341" y="88" width="13" height="17" rx="1"/><rect x="362" y="88" width="13" height="17" rx="1"/><rect x="383" y="88" width="13" height="17" rx="1"/><rect x="404" y="88" width="13" height="17" rx="1"/></g>
+      <g fill="rgba(201,150,58,0.5)"><rect x="320" y="118" width="13" height="17" rx="1"/><rect x="362" y="118" width="13" height="17" rx="1"/><rect x="404" y="118" width="13" height="17" rx="1"/></g>
+      <g fill="rgba(255,245,195,0.42)"><rect x="320" y="148" width="13" height="17" rx="1"/><rect x="341" y="148" width="13" height="17" rx="1"/><rect x="383" y="148" width="13" height="17" rx="1"/><rect x="320" y="178" width="13" height="17" rx="1"/><rect x="362" y="178" width="13" height="17" rx="1"/><rect x="404" y="178" width="13" height="17" rx="1"/><rect x="341" y="208" width="13" height="17" rx="1"/><rect x="383" y="208" width="13" height="17" rx="1"/></g>
+      <g fill="rgba(201,150,58,0.42)" class="wb2"><rect x="320" y="238" width="13" height="17" rx="1"/><rect x="404" y="238" width="13" height="17" rx="1"/></g>
+      <!-- Tower 2 -->
+      <rect x="492" y="130" width="108" height="530" fill="url(#bg3)" rx="1"/>
+      <polygon points="600,130 633,155 633,660 600,660" fill="rgba(201,150,58,0.07)"/>
+      <rect x="492" y="123" width="108" height="8" fill="rgba(255,255,255,0.12)"/>
+      <line x1="546" y1="123" x2="546" y2="92" stroke="rgba(201,150,58,0.5)" stroke-width="2.5"/>
+      <circle cx="546" cy="89" r="4.5" fill="#E8B458" filter="url(#gf)" opacity="0.85"/>
+      <g fill="rgba(255,245,195,0.44)"><rect x="504" y="148" width="11" height="15" rx="1"/><rect x="523" y="148" width="11" height="15" rx="1"/><rect x="542" y="148" width="11" height="15" rx="1"/><rect x="561" y="148" width="11" height="15" rx="1"/><rect x="504" y="176" width="11" height="15" rx="1"/><rect x="542" y="176" width="11" height="15" rx="1"/><rect x="523" y="204" width="11" height="15" rx="1"/><rect x="561" y="204" width="11" height="15" rx="1"/></g>
+      <g fill="rgba(201,150,58,0.5)" class="wb3"><rect x="504" y="232" width="11" height="15" rx="1"/><rect x="561" y="232" width="11" height="15" rx="1"/></g>
+      <!-- CENTRAL TOWER (Tallest) -->
+      <rect x="655" y="22" width="158" height="638" fill="url(#bg1)" rx="1"/>
+      <polygon points="813,22 864,56 864,660 813,660" fill="url(#sr)"/>
+      <polygon points="734,22 718,0 750,0" fill="url(#gg2)" filter="url(#gf2)"/>
+      <polygon points="734,22 718,0 734,-8 750,0" fill="rgba(255,220,120,.9)"/>
+      <rect x="655" y="16" width="158" height="9" fill="rgba(201,150,58,.55)" rx="1"/>
+      <rect x="647" y="185" width="174" height="5" fill="rgba(201,150,58,.22)"/>
+      <g fill="rgba(255,248,205,.56)" class="wb1"><rect x="668" y="44" width="15" height="19" rx="1"/><rect x="691" y="44" width="15" height="19" rx="1"/><rect x="714" y="44" width="15" height="19" rx="1"/><rect x="737" y="44" width="15" height="19" rx="1"/><rect x="760" y="44" width="15" height="19" rx="1"/><rect x="783" y="44" width="15" height="19" rx="1"/></g>
+      <g fill="rgba(201,150,58,.55)"><rect x="668" y="78" width="15" height="19" rx="1"/><rect x="714" y="78" width="15" height="19" rx="1"/><rect x="760" y="78" width="15" height="19" rx="1"/></g>
+      <g fill="rgba(255,248,205,.45)"><rect x="691" y="112" width="15" height="19" rx="1"/><rect x="737" y="112" width="15" height="19" rx="1"/><rect x="783" y="112" width="15" height="19" rx="1"/><rect x="668" y="146" width="15" height="19" rx="1"/><rect x="760" y="146" width="15" height="19" rx="1"/><rect x="714" y="202" width="15" height="19" rx="1"/><rect x="760" y="202" width="15" height="19" rx="1"/><rect x="668" y="236" width="15" height="19" rx="1"/><rect x="783" y="236" width="15" height="19" rx="1"/><rect x="691" y="270" width="15" height="19" rx="1"/><rect x="737" y="270" width="15" height="19" rx="1"/><rect x="668" y="304" width="15" height="19" rx="1"/><rect x="760" y="304" width="15" height="19" rx="1"/></g>
+      <g fill="rgba(201,150,58,.42)" class="wb2"><rect x="714" y="338" width="15" height="19" rx="1"/><rect x="783" y="338" width="15" height="19" rx="1"/></g>
+      <g fill="rgba(255,248,205,.35)"><rect x="668" y="372" width="15" height="19" rx="1"/><rect x="737" y="372" width="15" height="19" rx="1"/><rect x="691" y="406" width="15" height="19" rx="1"/><rect x="760" y="406" width="15" height="19" rx="1"/></g>
+      <text x="695" y="450" font-family="serif" font-size="12" fill="rgba(201,150,58,0.4)" letter-spacing="4">SKYRISE</text>
+      <!-- Tower 3 -->
+      <rect x="883" y="105" width="116" height="555" fill="url(#bg2)" rx="1"/>
+      <polygon points="999,105 1032,130 1032,660 999,660" fill="rgba(201,150,58,0.07)"/>
+      <rect x="883" y="98" width="116" height="8" fill="rgba(255,255,255,0.1)"/>
+      <line x1="941" y1="98" x2="941" y2="68" stroke="rgba(201,150,58,.5)" stroke-width="2"/>
+      <circle cx="941" cy="65" r="4" fill="#C9963A" filter="url(#gf)" opacity="0.85"/>
+      <g fill="rgba(255,245,195,.42)"><rect x="895" y="124" width="12" height="16" rx="1"/><rect x="915" y="124" width="12" height="16" rx="1"/><rect x="935" y="124" width="12" height="16" rx="1"/><rect x="955" y="124" width="12" height="16" rx="1"/><rect x="895" y="154" width="12" height="16" rx="1"/><rect x="935" y="154" width="12" height="16" rx="1"/><rect x="915" y="184" width="12" height="16" rx="1"/><rect x="955" y="184" width="12" height="16" rx="1"/></g>
+      <g fill="rgba(201,150,58,.48)" class="wb3"><rect x="915" y="214" width="12" height="16" rx="1"/><rect x="955" y="214" width="12" height="16" rx="1"/></g>
+      <!-- Right cluster -->
+      <rect x="1060" y="168" width="98" height="492" fill="url(#bg3)" rx="1"/>
+      <polygon points="1158,168 1188,192 1188,660 1158,660" fill="rgba(201,150,58,0.06)"/>
+      <g fill="rgba(255,245,195,.38)"><rect x="1072" y="188" width="11" height="15" rx="1"/><rect x="1091" y="188" width="11" height="15" rx="1"/><rect x="1110" y="188" width="11" height="15" rx="1"/><rect x="1072" y="217" width="11" height="15" rx="1"/><rect x="1110" y="217" width="11" height="15" rx="1"/><rect x="1091" y="246" width="11" height="15" rx="1"/></g>
+      <rect x="1210" y="210" width="88" height="450" fill="url(#bg2)" rx="1"/>
+      <rect x="1340" y="290" width="100" height="370" fill="url(#bg1)" rx="1"/>
+      <!-- Crane -->
+      <g class="crane-g">
+        <rect x="472" y="0" width="7" height="132" fill="rgba(201,150,58,0.72)"/>
+        <rect x="378" y="10" width="210" height="5" fill="rgba(201,150,58,0.65)"/>
+        <line x1="430" y1="15" x2="430" y2="58" stroke="rgba(201,150,58,.5)" stroke-width="1.5"/>
+        <rect x="424" y="57" width="12" height="8" fill="rgba(201,150,58,.62)" rx="1"/>
+        <line x1="472" y1="0" x2="495" y2="10" stroke="rgba(201,150,58,.5)" stroke-width="1"/>
+        <line x1="479" y1="0" x2="457" y2="10" stroke="rgba(201,150,58,.5)" stroke-width="1"/>
+      </g>
+      <!-- Ground -->
+      <rect x="0" y="648" width="1440" height="10" fill="#0a0a12"/>
+      <g fill="rgba(201,150,58,.75)" filter="url(#gf)"><circle cx="180" cy="650" r="2.8"/><circle cx="360" cy="650" r="2.8"/><circle cx="540" cy="650" r="2.8"/><circle cx="900" cy="650" r="2.8"/><circle cx="1080" cy="650" r="2.8"/><circle cx="1260" cy="650" r="2.8"/></g>
+      <g opacity=".12"><rect x="668" y="666" width="15" height="7" fill="#E8B458"/><rect x="714" y="666" width="15" height="7" fill="#E8B458"/><rect x="760" y="666" width="15" height="7" fill="#E8B458"/></g>
+    </svg>
+  </div>
+  <div class="hc">
+    <div class="hey"><div class="hey-line"></div><span>India's Premier Construction Partner</span></div>
+    <h1 class="hh1">Build Your<br><em>Dream</em><span class="sub">With Us</span></h1>
+    <p class="hp">Premium construction & project management across 15+ cities in India. Landmark structures delivered with precision, integrity, and excellence since 2004.</p>
+    <div class="hbtns"><a href="#contact" class="btn-g">Get Free Quote</a><a href="#portfolio" class="btn-s">View Projects</a></div>
+  </div>
+  <div class="sbar">
+    <div class="hs"><span class="hs-n counter" data-t="500" data-s="+">0</span><div class="hs-l">Projects Delivered</div></div>
+    <div class="hs"><span class="hs-n counter" data-t="20" data-s="+">0</span><div class="hs-l">Years Experience</div></div>
+    <div class="hs"><span class="hs-n counter" data-t="15" data-s="+">0</span><div class="hs-l">Cities Served</div></div>
+    <div class="hs"><span class="hs-n counter" data-t="98" data-s="%">0</span><div class="hs-l">Client Satisfaction</div></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq"><div class="mq-t"><span class="mi">Residential<span class="md"></span></span><span class="mi">Commercial<span class="md"></span></span><span class="mi">Industrial<span class="md"></span></span><span class="mi">Interior Design<span class="md"></span></span><span class="mi">Renovation<span class="md"></span></span><span class="mi">Project Mgmt<span class="md"></span></span><span class="mi">ISO Certified<span class="md"></span></span><span class="mi">skyriseconstructioninfra.com<span class="md"></span></span><span class="mi">Residential<span class="md"></span></span><span class="mi">Commercial<span class="md"></span></span><span class="mi">Industrial<span class="md"></span></span><span class="mi">Interior Design<span class="md"></span></span><span class="mi">Renovation<span class="md"></span></span><span class="mi">Project Mgmt<span class="md"></span></span><span class="mi">ISO Certified<span class="md"></span></span><span class="mi">skyriseconstructioninfra.com<span class="md"></span></span></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <span class="label rv">Our Story</span>
+  <h2 class="h2 rv d1" style="max-width:660px;">We Build <em>Landmarks</em>,<br>Not Just Buildings</h2>
+  <div class="ag">
+    <div class="av rv">
+      <div class="am"><div class="ap"></div><div style="position:relative;z-index:1;text-align:center;"><div class="ai">🏙️</div><div class="ac">Building India's Skyline Since 2004</div></div></div>
+      <div class="fb fb1"><span class="fbn">500+</span><div class="fbl">Projects Done</div></div>
+      <div class="fb fb2"><span class="fbn">⭐ 4.9</span><div class="fbl">Client Rating</div></div>
+    </div>
+    <div class="rv d2">
+      <p class="bt" style="margin-bottom:26px;">Founded with a vision to redefine construction excellence, Skyrise Construction Infra has grown into a trusted name for premium residential, commercial, and industrial projects across India. Every structure we deliver is a testament to our commitment to quality, innovation, and client satisfaction.</p>
+      <div class="feats">
+        <div class="feat"><div class="fi">🏆</div><div class="fc"><strong>ISO 9001:2015 Certified</strong><span>Internationally recognized quality management across all projects</span></div></div>
+        <div class="feat"><div class="fi">⚡</div><div class="fc"><strong>On-Time, Every Time</strong><span>98% of projects delivered on or ahead of schedule — guaranteed</span></div></div>
+        <div class="feat"><div class="fi">🔒</div><div class="fc"><strong>Full Transparency</strong><span>Weekly reports, milestone tracking, zero hidden charges</span></div></div>
+        <div class="feat"><div class="fi">🌿</div><div class="fc"><strong>Sustainable Building</strong><span>Eco-friendly materials and green practices always</span></div></div>
+      </div>
+      <a href="#contact" class="btn-g" style="margin-top:8px;">Talk to Our Experts</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sh"><div><span class="label rv">What We Build</span><h2 class="h2 rv d1">Our <em>Services</em></h2></div><a href="#contact" style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--charcoal);border-bottom:1px solid var(--charcoal);padding-bottom:3px;transition:.3s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='var(--gold)'" onmouseout="this.style.color='var(--charcoal)';this.style.borderColor='var(--charcoal)'">All Services →</a></div>
+  <div class="sg">
+    <div class="sc rv"><div class="sn">01</div><div class="sic">🏠</div><h3 class="st">Residential Construction</h3><p class="sd">Luxury villas, apartments, and housing societies built with premium materials, skilled craftsmen, and obsessive attention to detail.</p><div class="sa">Explore →</div></div>
+    <div class="sc rv d1"><div class="sn">02</div><div class="sic">🏢</div><h3 class="st">Commercial Buildings</h3><p class="sd">Corporate offices, retail complexes, and business parks engineered for functionality, aesthetic excellence, and lasting value.</p><div class="sa">Explore →</div></div>
+    <div class="sc rv d2"><div class="sn">03</div><div class="sic">🎨</div><h3 class="st">Interior Design & Fit-Out</h3><p class="sd">Stunning interiors from concept to completion — 3D visualization, material selection, and flawless execution every time.</p><div class="sa">Explore →</div></div>
+    <div class="sc rv"><div class="sn">04</div><div class="sic">📊</div><h3 class="st">Project Management</h3><p class="sd">End-to-end oversight — planning, procurement, scheduling, cost control, and quality assurance with full transparency.</p><div class="sa">Explore →</div></div>
+    <div class="sc rv d1"><div class="sn">05</div><div class="sic">🔧</div><h3 class="st">Renovation & Restoration</h3><p class="sd">Breathe new life into structures with precision renovation preserving character and delivering modern standards.</p><div class="sa">Explore →</div></div>
+    <div class="sc rv d2"><div class="sn">06</div><div class="sic">🏭</div><h3 class="st">Industrial Construction</h3><p class="sd">Factories, warehouses, and industrial facilities built to exacting safety standards, efficiency, and full regulatory compliance.</p><div class="sa">Explore →</div></div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section id="numbers">
+  <div class="nl">
+    <div class="rv"><span class="label" style="color:var(--gold)">The Numbers</span><h2 class="h2 h2w">The Skyrise <em>Difference</em></h2><p class="bt" style="color:rgba(255,255,255,.38);margin-top:18px;">Two decades. 500+ projects. Thousands of satisfied clients. Results that speak louder than words.</p>
+      <div class="ng">
+        <div class="nc"><span class="ncv cnt2" data-t="500" data-s="+">0</span><div class="ncl">Projects Done</div></div>
+        <div class="nc"><span class="ncv cnt2" data-t="20" data-s="+">0</span><div class="ncl">Years Active</div></div>
+        <div class="nc"><span class="ncv cnt2" data-t="98" data-s="%">0</span><div class="ncl">On-Time Rate</div></div>
+        <div class="nc"><span class="ncv cnt2" data-t="15" data-s="+">0</span><div class="ncl">Cities Served</div></div>
+      </div>
+    </div>
+    <div class="wl rv d2">
+      <div class="wr"><div class="wn">01</div><div class="wt"><h4>Zero Compromise on Quality</h4><p>Every material and finish meets our strict quality benchmark. Certified, premium-grade, always.</p></div></div>
+      <div class="wr"><div class="wn">02</div><div class="wt"><h4>Schedule-Driven Execution</h4><p>Weekly photo and video reports keep you fully informed. Milestones are promises we always keep.</p></div></div>
+      <div class="wr"><div class="wn">03</div><div class="wt"><h4>Technology-First Approach</h4><p>BIM modelling, drone surveys, and digital cost tracking for smarter, faster, better results.</p></div></div>
+      <div class="wr"><div class="wn">04</div><div class="wt"><h4>Dedicated Project Manager</h4><p>One point of contact for every client — your personal manager from groundbreaking to handover.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="ph rv"><div><span class="label">Our Work</span><h2 class="h2">Featured <em>Projects</em></h2></div><a href="#contact" class="btn-g">Start Your Project</a></div>
+  <div class="pfs rv"><button class="pf on" onclick="portF('all',this)">All</button><button class="pf" onclick="portF('residential',this)">Residential</button><button class="pf" onclick="portF('commercial',this)">Commercial</button><button class="pf" onclick="portF('industrial',this)">Industrial</button><button class="pf" onclick="portF('interior',this)">Interior</button></div>
+  <div class="pg" id="portGrid">
+    <div class="pc rv" data-cat="residential"><div class="pw"><div class="pci" style="background:linear-gradient(135deg,#1C1C1A,#2A2A27);">🏙️<div class="po"><div class="pinf"><div class="pcat">Residential</div><div class="pname">Skyrise Residency Tower A</div><div class="ploc">Mumbai, Maharashtra · 2024</div></div></div></div></div><div class="pfoot"><span>Premium Apartments · 24 Floors</span><button onclick="projWA('Skyrise Residency Tower A')">Enquire</button></div></div>
+    <div class="pc rv d1" data-cat="commercial"><div class="pw"><div class="pci" style="background:linear-gradient(135deg,#2A2A27,#3A3A37);">🏢<div class="po"><div class="pinf"><div class="pcat">Commercial</div><div class="pname">The Business Hub</div><div class="ploc">Pune, Maharashtra · 2023</div></div></div></div></div><div class="pfoot"><span>Corporate Office Park · 8 Acres</span><button onclick="projWA('The Business Hub')">Enquire</button></div></div>
+    <div class="pc rv d2" data-cat="industrial"><div class="pw"><div class="pci" style="background:linear-gradient(135deg,#1a1a18,#2A2A27);">🏭<div class="po"><div class="pinf"><div class="pcat">Industrial</div><div class="pname">TechPark Industrial Zone</div><div class="ploc">Nashik, Maharashtra · 2023</div></div></div></div></div><div class="pfoot"><span>Industrial Complex · 12 Acres</span><button onclick="projWA('TechPark Industrial Zone')">Enquire</button></div></div>
+    <div class="pc rv" data-cat="residential"><div class="pw"><div class="pci" style="background:linear-gradient(135deg,#3A3A37,#1C1C1A);">🏡<div class="po"><div class="pinf"><div class="pcat">Residential</div><div class="pname">Elite Villas Phase 2</div><div class="ploc">Bangalore, Karnataka · 2022</div></div></div></div></div><div class="pfoot"><span>Luxury Villas · 48 Units</span><button onclick="projWA('Elite Villas Phase 2')">Enquire</button></div></div>
+    <div class="pc rv d1" data-cat="interior"><div class="pw"><div class="pci" style="background:linear-gradient(135deg,#2A2A27,#1a1a18);">🎨<div class="po"><div class="pinf"><div class="pcat">Interior</div><div class="pname">Grand Plaza Interior</div><div class="ploc">Hyderabad, Telangana · 2022</div></div></div></div></div><div class="pfoot"><span>Luxury Interior · 50,000 sq ft</span><button onclick="projWA('Grand Plaza Interior')">Enquire</button></div></div>
+    <div class="pc rv d2" data-cat="commercial"><div class="pw"><div class="pci" style="background:linear-gradient(135deg,#1C1C1A,#3A3A37);">🌆<div class="po"><div class="pinf"><div class="pcat">Commercial</div><div class="pname">Skyrise Towers NCR</div><div class="ploc">Delhi NCR · 2024</div></div></div></div></div><div class="pfoot"><span>Mixed-Use Tower · 32 Floors</span><button onclick="projWA('Skyrise Towers NCR')">Enquire</button></div></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="rv" style="max-width:580px;"><span class="label">How We Work</span><h2 class="h2">Our Seamless <em>Process</em></h2></div>
+  <div class="prg">
+    <div class="sb rv"><div class="sbn">01</div><div class="sbbar"></div><h4 class="sbt">Free Consultation</h4><p class="sbd">We listen to your vision, assess your site, and understand your goals — free, no obligation, always.</p></div>
+    <div class="sb rv d1"><div class="sbn">02</div><div class="sbbar"></div><h4 class="sbt">Design & Planning</h4><p class="sbd">Detailed designs, 3D renders, and a comprehensive project plan with timeline and full cost breakdown.</p></div>
+    <div class="sb rv d2"><div class="sbn">03</div><div class="sbbar"></div><h4 class="sbt">Build & Report</h4><p class="sbd">Skilled teams execute with precision. Weekly photo and video progress updates keep you informed.</p></div>
+    <div class="sb rv d3"><div class="sbn">04</div><div class="sbbar"></div><h4 class="sbt">Handover & Support</h4><p class="sbd">On-time delivery, thorough walkthrough, and 2 years of post-construction warranty and support.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="th rv"><div><span class="label" style="color:var(--gold)">Client Stories</span><h2 class="h2 h2w">What Our <em>Clients</em> Say</h2></div><div class="tctrl"><button class="tb" onclick="moveT(-1)">←</button><button class="tb" onclick="moveT(1)">→</button></div></div>
+  <div class="ts rv"><div class="tt" id="tTrack">
+    <div class="tc"><div class="tcs">★★★★★</div><p class="tcq">"Skyrise delivered our commercial complex 3 weeks ahead of schedule with exceptional quality. Their professionalism and attention to detail was absolutely outstanding."</p><div class="tcd"></div><div class="tca"><div class="tcav">R</div><div><div class="tcn">Rajesh Malhotra</div><div class="tcr">CEO, Malhotra Enterprises · Mumbai</div></div></div></div>
+    <div class="tc"><div class="tcs">★★★★★</div><p class="tcq">"From first consultation to final handover, Skyrise was transparent, professional, and exceeded every expectation. Our dream home is exactly that — a dream come true."</p><div class="tcd"></div><div class="tca"><div class="tcav">P</div><div><div class="tcn">Priya Sharma</div><div class="tcr">Homeowner · Pune, Maharashtra</div></div></div></div>
+    <div class="tc"><div class="tcs">★★★★★</div><p class="tcq">"We've worked with many contractors over 15 years. None come close to Skyrise. Quality, timeline, budget — nailed all three. Our industrial facility is world-class."</p><div class="tcd"></div><div class="tca"><div class="tcav">A</div><div><div class="tcn">Amit Desai</div><div class="tcr">Director, Desai Industries · Nashik</div></div></div></div>
+    <div class="tc"><div class="tcs">★★★★★</div><p class="tcq">"Skyrise handled our retail complex with incredible precision. Weekly updates kept us informed throughout. The result exceeded every single expectation we had."</p><div class="tcd"></div><div class="tca"><div class="tcav">S</div><div><div class="tcn">Sunita Patel</div><div class="tcr">MD, Patel Group · Hyderabad</div></div></div></div>
+    <div class="tc"><div class="tcs">★★★★★</div><p class="tcq">"Skyrise transformed our outdated office into a stunning modern workspace. The interior team's creativity combined with flawless execution was simply phenomenal."</p><div class="tcd"></div><div class="tca"><div class="tcav">V</div><div><div class="tcn">Vikram Nair</div><div class="tcr">Founder, NairTech Solutions · Bangalore</div></div></div></div>
+  </div></div>
+  <div class="tdots" id="tDots"><div class="tdot on" onclick="goT(0)"></div><div class="tdot" onclick="goT(1)"></div><div class="tdot" onclick="goT(2)"></div><div class="tdot" onclick="goT(3)"></div><div class="tdot" onclick="goT(4)"></div></div>
+</section>
+
+<!-- CAREERS -->
+<section id="careers">
+  <span class="label rv">Join Our Team</span>
+  <h2 class="h2 rv d1">Build Your <em>Career</em> With Skyrise</h2>
+  <div class="carg">
+    <div class="rv">
+      <p class="bt">At Skyrise Construction Infra, we believe great buildings are built by great people. We're always looking for passionate individuals who share our commitment to excellence and integrity.</p>
+      <div class="perks">
+        <div class="perk"><div class="pi">💰</div><div class="pt">Competitive salary + performance bonuses</div></div>
+        <div class="perk"><div class="pi">📈</div><div class="pt">Fast-track career growth opportunities</div></div>
+        <div class="perk"><div class="pi">🎓</div><div class="pt">Paid training, certifications & upskilling</div></div>
+        <div class="perk"><div class="pi">🏥</div><div class="pt">Health insurance for employee & family</div></div>
+        <div class="perk"><div class="pi">🌍</div><div class="pt">Pan-India project exposure & travel</div></div>
+        <div class="perk"><div class="pi">🤝</div><div class="pt">Respectful, collaborative work culture</div></div>
+      </div>
+    </div>
+    <div class="rv d2">
+      <div class="jobs">
+        <div class="jc" onclick="jobWA('Senior Civil Engineer')"><div class="jt"><div class="jti">Senior Civil Engineer</div><div class="jb">Urgent</div></div><div class="jm"><span class="jtag">📍 Mumbai/Pune</span><span class="jtag">⏱️ Full-Time</span><span class="jtag">💼 5+ Yrs</span></div><p class="jd">Lead structural design, site supervision and quality control for large-scale residential and commercial projects.</p><div class="ja">Apply via WhatsApp →</div></div>
+        <div class="jc" onclick="jobWA('Project Manager')"><div class="jt"><div class="jti">Project Manager</div><div class="jb">2 Openings</div></div><div class="jm"><span class="jtag">📍 Bangalore/Hyd</span><span class="jtag">⏱️ Full-Time</span><span class="jtag">💼 7+ Yrs</span></div><p class="jd">Oversee end-to-end project delivery — budgets, timelines, vendor coordination, and client communication.</p><div class="ja">Apply via WhatsApp →</div></div>
+        <div class="jc" onclick="jobWA('Interior Design Lead')"><div class="jt"><div class="jti">Interior Design Lead</div><div class="jb">New Role</div></div><div class="jm"><span class="jtag">📍 Mumbai</span><span class="jtag">⏱️ Full-Time</span><span class="jtag">💼 4+ Yrs</span></div><p class="jd">Lead interior projects from concept to execution. AutoCAD, SketchUp proficiency required with strong portfolio.</p><div class="ja">Apply via WhatsApp →</div></div>
+        <div class="jc" onclick="jobWA('Site Supervisor')"><div class="jt"><div class="jti">Site Supervisor</div><div class="jb">Multiple</div></div><div class="jm"><span class="jtag">📍 Pan-India</span><span class="jtag">⏱️ Full-Time</span><span class="jtag">💼 3+ Yrs</span></div><p class="jd">Supervise daily site operations, ensure safety compliance, manage subcontractors, and maintain quality standards.</p><div class="ja">Apply via WhatsApp →</div></div>
+      </div>
+      <div class="cjcta"><strong>Don't see your role?</strong><p>We're always open to exceptional talent. Send your CV directly.</p><a href="mailto:careers@skyriseconstructioninfra.com" class="btn-g" style="display:inline-flex;margin-top:2px;">📧 Email Your CV</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section id="ctaban" style="padding:88px 5%;">
+  <div class="ctaf rv"><div><h2>Ready to Build Something <em>Extraordinary?</em></h2><p>Free consultation. Quote within 24 hours. No obligation.</p></div><div class="ctabtns"><a href="#contact" class="btn-wh">Get Free Quote</a><a href="https://wa.me/919962074257?text=Hello%20Skyrise!%20I%20visited%20skyriseconstructioninfra.com%20and%20want%20to%20discuss%20a%20project." target="_blank" class="btn-wa">💬 WhatsApp Us</a></div></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <span class="label rv">Get In Touch</span>
+  <h2 class="h2 rv d1">Start Your <em>Dream Project</em></h2>
+  <div class="cong">
+    <div class="ci-list rv">
+      <div class="ci"><div class="cii">🌐</div><div><h4>Website</h4><p><a href="https://www.skyriseconstructioninfra.com">www.skyriseconstructioninfra.com</a></p></div></div>
+      <div class="ci"><div class="cii">📞</div><div><h4>Call Us</h4><p><a href="tel:+919962074257">+91 99620 74257</a><br><span style="font-size:12px;color:#aaa;">Mon–Sat, 9 AM – 7 PM</span></p></div></div>
+      <div class="ci"><div class="cii">📧</div><div><h4>Email</h4><p><a href="mailto:info@skyriseconstructioninfra.com">info@skyriseconstructioninfra.com</a></p></div></div>
+      <div class="ci"><div class="cii">📍</div><div><h4>Office</h4><p>Skyrise House, MG Road, Andheri East<br>Mumbai, Maharashtra — 400069</p></div></div>
+      <div class="ci" style="cursor:pointer;" onclick="window.open('https://wa.me/919962074257?text=Hi%20Skyrise!%20I%20want%20to%20discuss%20a%20project.','_blank')"><div class="cii" style="background:var(--green);">💬</div><div><h4>WhatsApp</h4><p><a>Chat Instantly — +91 99620 74257</a></p></div></div>
+    </div>
+    <div class="rv d2">
+      <div class="fbox" id="formBox">
+        <h3>Send a Message</h3><p class="fsb">Free personalised quote — no obligation ever.</p>
+        <div class="fr"><div class="fg"><label>Full Name *</label><input id="fn" type="text" placeholder="Your full name"/></div><div class="fg"><label>Phone *</label><input id="fp" type="tel" placeholder="+91 XXXXX XXXXX"/></div></div>
+        <div class="fg"><label>Email</label><input id="fe" type="email" placeholder="your@email.com"/></div>
+        <div class="fr"><div class="fg"><label>Project Type</label><select id="ft"><option value="">Select</option><option>Residential</option><option>Commercial</option><option>Industrial</option><option>Interior Design</option><option>Renovation</option><option>Project Management</option></select></div><div class="fg"><label>Budget Range</label><select id="fb"><option value="">Select</option><option>₹10L – ₹50L</option><option>₹50L – ₹1Cr</option><option>₹1Cr – ₹5Cr</option><option>₹5Cr – ₹20Cr</option><option>₹20Cr+</option></select></div></div>
+        <div class="fg"><label>Message</label><textarea id="fm" placeholder="Tell us your vision, location, timeline..."></textarea></div>
+        <button class="fbtn" onclick="submitForm()">Send Message — We'll Call You Back</button>
+      </div>
+      <div class="fdone" id="formDone"><div class="fdi">✅</div><h4>Message Received!</h4><p>Our consultant will call you within 2 hours. Check WhatsApp (+91 99620 74257) for confirmation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftg">
+    <div>
+      <span class="fl">SKYRISE CONSTRUCTION INFRA</span>
+      <span class="fd">🌐 skyriseconstructioninfra.com</span>
+      <p class="fa">Build Your Dream With Us. India's trusted premium construction partner — delivering landmark projects with excellence, precision, and integrity since 2004. 500+ projects. 15+ cities. Zero compromises.</p>
+      <div class="socials"><a href="#" class="soc">💼</a><a href="#" class="soc">📸</a><a href="#" class="soc">👥</a><a href="#" class="soc">▶️</a><a href="https://wa.me/919962074257" target="_blank" class="soc">💬</a></div>
+    </div>
+    <div class="fcol"><h5>Navigate</h5><ul class="flinks"><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Projects</a></li><li><a href="#process">Process</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#careers">Careers</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div class="fcol"><h5>Services</h5><ul class="flinks"><li><a href="#services">Residential</a></li><li><a href="#services">Commercial</a></li><li><a href="#services">Industrial</a></li><li><a href="#services">Interior Design</a></li><li><a href="#services">Renovation</a></li><li><a href="#services">Project Mgmt</a></li></ul></div>
+    <div class="fcol"><h5>Contact</h5><ul class="flinks">
+      <li><a href="https://www.skyriseconstructioninfra.com">🌐 skyriseconstructioninfra.com</a></li>
+      <li><a href="tel:+919962074257">📞 +91 99620 74257</a></li>
+      <li><a href="mailto:info@skyriseconstructioninfra.com">✉️ info@skyriseconstructioninfra.com</a></li>
+      <li><a href="#">📍 Mumbai, Maharashtra</a></li>
+      <li><a href="https://wa.me/919962074257" target="_blank">💬 WhatsApp</a></li>
+      <li><a href="mailto:careers@skyriseconstructioninfra.com">🧑‍💼 Careers</a></li>
+    </ul></div>
+  </div>
+  <div class="fbot"><p>© 2025 Skyrise Construction Infra. All Rights Reserved. · <a href="https://www.skyriseconstructioninfra.com" style="color:rgba(255,255,255,.3)">skyriseconstructioninfra.com</a></p><div class="fcerts"><div class="cert">ISO 9001:2015</div><div class="cert">🇮🇳 Made in India</div></div></div>
+</footer>
+
+<!-- WA Tooltip -->
+<div class="wa-tip" id="waTip">
+  <button class="wa-tip-x" onclick="this.parentElement.remove()">✕</button>
+  <p>💬 Chat on WhatsApp!</p>
+  <span>+91 99620 74257 · Replies in 5 min</span>
+</div>
+
+<!-- FLOATS -->
+<div class="float-stack">
+  <a class="wa-fab" href="https://wa.me/919962074257?text=Hello%20Skyrise%20Construction!%20I%20visited%20skyriseconstructioninfra.com%20and%20I%27m%20interested%20in%20a%20project." target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <button class="chat-fab" id="chatFab" onclick="toggleChat()" style="position:relative;">⛑️<span class="notif" id="chatNotif">1</span></button>
+</div>
+
+<!-- PROACTIVE APPROACH POPUP -->
+<div class="approach-popup" id="approachPop">
+  <div class="ap-head">
+    <div class="ap-av">⛑️</div>
+    <div><div class="ap-name">Sky Assistant</div><div class="ap-role">Skyrise Project Advisor</div></div>
+    <button class="ap-x" onclick="closeApproach()">✕</button>
+  </div>
+  <div class="ap-body">
+    <p id="ap-msg">👋 <strong>Hello!</strong> Welcome to Skyrise Construction Infra.<br><br>Looking to build your dream project? I can help you get a <strong>FREE</strong> site visit + consultation! 🏗️</p>
+    <div class="ap-btns">
+      <button class="ap-btn primary" onclick="acceptApproach()">✅ Yes! Get Free Quote</button>
+      <button class="ap-btn secondary" onclick="closeApproach()">Maybe later</button>
+    </div>
+    <div class="ap-timer"><div class="ap-timer-fill" id="apTimer"></div></div>
+  </div>
+</div>
+
+<!-- AI CHATBOT -->
+<div class="chatbot" id="chatbot">
+  <div class="cb-head">
+    <div class="cb-av">⛑️</div>
+    <div class="cb-inf">
+      <h4>Sky Assistant</h4>
+      <div class="cb-status" id="cbStatus">Online · skyriseconstructioninfra.com</div>
+    </div>
+    <button class="cb-mode ai-on" id="cbModeBtn" onclick="toggleAIMode()" title="AI Mode">🤖 AI</button>
+    <button class="cb-x" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="ai-indicator" id="aiIndicator">
+    <div class="ai-dot"></div>
+    <div class="ai-label">Powered by <strong>Claude AI</strong> · Real Intelligence</div>
+  </div>
+  <div class="cb-body" id="cbBody">
+    <div class="msg bot">Welcome to <strong>Skyrise Construction Infra</strong>! 🏗️<br><br>I'm <strong>Sky</strong>, your AI project advisor — powered by <em>Claude AI</em>.<br><br>I can answer any question about construction, our services, pricing, or help you plan your project!<span class="ai-badge">⚡ AI-Powered Response</span></div>
+  </div>
+  <!-- Lead capture -->
+  <div class="cb-lead" id="cbLead" style="display:none;">
+    <p>📱 Get instant WhatsApp response:</p>
+    <input id="leadPhone" type="tel" placeholder="+91 your phone number"/>
+    <input id="leadName" type="text" placeholder="Your name"/>
+    <button onclick="submitLead()">📲 Send to WhatsApp Now</button>
+  </div>
+  <div class="cb-qr" id="cbQR">
+    <button class="qr" onclick="quickReply('services')">🏗️ Services</button>
+    <button class="qr" onclick="quickReply('quote')">📋 Free Quote</button>
+    <button class="qr" onclick="quickReply('cost')">💰 Cost & Pricing</button>
+    <button class="qr" onclick="quickReply('timeline')">📅 Timeline</button>
+    <button class="qr gold" onclick="quickReply('whatsapp')">💬 WhatsApp Now</button>
+    <button class="qr" onclick="quickReply('careers')">🧑‍💼 Careers</button>
+  </div>
+  <div class="cb-inp">
+    <input class="cb-text" id="cbIn" placeholder="Ask me anything about construction..." onkeydown="if(event.key==='Enter')sendMsg()"/>
+    <button class="cb-send" onclick="sendMsg()">➤</button>
+  </div>
+</div>
+
+<script>
+const WA = '919962074257';
+const DOMAIN = 'skyriseconstructioninfra.com';
+
+/* LOADER */
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('out'),2000));
+
+/* NAV */
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('solid',scrollY>80));
+let mOpen=false;
+function toggleMenu(){mOpen=!mOpen;document.getElementById('mmenu').classList.toggle('show',mOpen);}
+function closeMenu(){mOpen=false;document.getElementById('mmenu').classList.remove('show');}
+
+/* STARS */
+(function(){const w=document.getElementById('starsW');for(let i=0;i<160;i++){const s=document.createElement('div');s.className='star';const sz=Math.random()*2.5+.5;s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*78}%;animation-duration:${Math.random()*4+2}s;animation-delay:${Math.random()*4}s;`;w.appendChild(s);}})();
+
+/* PARTICLES */
+(function(){const w=document.getElementById('fpsW');for(let i=0;i<22;i++){const p=document.createElement('div');p.className='fp';const sz=Math.random()*5+2;p.style.cssText=`width:${sz}px;height:${sz}px;background:${Math.random()>.4?'rgba(201,150,58,0.65)':'rgba(255,255,255,0.18)'};left:${Math.random()*100}%;animation-duration:${Math.random()*14+10}s;animation-delay:${Math.random()*10}s;`;w.appendChild(p);}})();
+
+/* COUNTERS */
+function runC(el){const t=+el.dataset.t,s=el.dataset.s||'';let c=0;const ti=setInterval(()=>{c+=t/70;if(c>=t){c=t;clearInterval(ti);}el.textContent=Math.floor(c)+s;},22);}
+setTimeout(()=>document.querySelectorAll('.counter').forEach(runC),2100);
+new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.querySelectorAll('.cnt2').forEach(runC);}),{threshold:.2}).observe(document.getElementById('numbers'));
+
+/* REVEAL */
+const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+
+/* PORTFOLIO */
+function portF(cat,btn){document.querySelectorAll('.pf').forEach(b=>b.classList.remove('on'));btn.classList.add('on');document.querySelectorAll('.pc').forEach(c=>c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none');}
+function projWA(name){const msg=encodeURIComponent(`Hello Skyrise! 👋\n\nI'm interested in the *${name}* project.\nPlease share more details and pricing.\n\n📍 Visited: ${DOMAIN}`);window.open(`https://wa.me/${WA}?text=${msg}`,'_blank');}
+
+/* TESTIMONIALS */
+let tCur=0,tA;
+function goT(n){tCur=n;const tr=document.getElementById('tTrack');const w=tr.querySelector('.tc').offsetWidth+16;tr.style.transform=`translateX(-${n*w}px)`;document.querySelectorAll('.tdot').forEach((d,i)=>d.classList.toggle('on',i===n));}
+function moveT(dir){const tot=document.querySelectorAll('.tc').length;tCur=(tCur+dir+tot)%tot;goT(tCur);}
+tA=setInterval(()=>moveT(1),5000);
+document.querySelector('.ts').addEventListener('mouseenter',()=>clearInterval(tA));
+document.querySelector('.ts').addEventListener('mouseleave',()=>{tA=setInterval(()=>moveT(1),5000);});
+
+/* CAREERS */
+function jobWA(role){const msg=encodeURIComponent(`Hello Skyrise! 👋\n\nI'm interested in the *${role}* position.\nPlease share job details and next steps.\n\n📍 Found at: ${DOMAIN}`);window.open(`https://wa.me/${WA}?text=${msg}`,'_blank');}
+
+/* FORM */
+function submitForm(){
+  const n=document.getElementById('fn').value.trim(),p=document.getElementById('fp').value.trim();
+  if(!n||!p){alert('Please enter your name and phone number.');return;}
+  document.getElementById('formBox').style.display='none';document.getElementById('formDone').style.display='block';
+  const msg=encodeURIComponent(`🏗️ *New Enquiry — ${DOMAIN}*\n\nName: ${n}\nPhone: ${p}\nEmail: ${document.getElementById('fe').value||'N/A'}\nType: ${document.getElementById('ft').value||'N/A'}\nBudget: ${document.getElementById('fb').value||'N/A'}\nMessage: ${document.getElementById('fm').value||'—'}`);
+  setTimeout(()=>window.open(`https://wa.me/${WA}?text=${msg}`,'_blank'),1500);
+}
+
+/* ══════════════════════════════════════════
+   PROACTIVE APPROACH SYSTEM
+══════════════════════════════════════════ */
+const approachMessages=[
+  '👋 <strong>Hello!</strong> Welcome to Skyrise Construction Infra.<br><br>Looking to build your dream project? Get a <strong>FREE</strong> site visit + consultation today! 🏗️',
+  '🏠 <strong>Building a home or office?</strong><br><br>Over 500 clients trusted us. Get your FREE estimate — no obligation, just expert advice!',
+  '⭐ <strong>4.9★ rated by 500+ clients!</strong><br><br>Join India\'s most trusted construction family. Get a FREE quote in 2 hours!'
+];
+let approachShown=false;
+
+setTimeout(()=>{
+  if(!approachShown){
+    approachShown=true;
+    const idx=Math.floor(Math.random()*approachMessages.length);
+    document.getElementById('ap-msg').innerHTML=approachMessages[idx];
+    document.getElementById('approachPop').classList.add('show');
+    // Auto-close after 12 seconds
+    setTimeout(()=>closeApproach(),12000);
+  }
+},8000);
+
+function closeApproach(){document.getElementById('approachPop').classList.remove('show');}
+
+function acceptApproach(){
+  closeApproach();
+  toggleChat();
+  setTimeout(()=>{
+    addBot(`🎉 Great choice, Sir! Let me help you get started.\n\nI'm Sky, your AI project advisor. Could you share:\n\n1️⃣ What type of project? (Residential/Commercial)\n2️⃣ Rough budget range?\n3️⃣ Location?\n\nOr tap a quick option below!`);
+  },600);
+}
+
+// Exit-intent trigger
+let exitTriggered=false;
+document.addEventListener('mouseleave',(e)=>{
+  if(e.clientY<0 && !exitTriggered && !approachShown){
+    exitTriggered=true;approachShown=true;
+    document.getElementById('ap-msg').innerHTML='🚪 <strong>Wait before you leave!</strong><br><br>Get a <strong>FREE consultation</strong> with our senior architect — takes just 5 minutes! 🏗️';
+    document.getElementById('approachPop').classList.add('show');
+    setTimeout(()=>closeApproach(),10000);
+  }
+});
+
+// Scroll-based trigger (when user scrolls 70%)
+window.addEventListener('scroll',()=>{
+  const scrollPct=(scrollY/(document.body.scrollHeight-window.innerHeight))*100;
+  if(scrollPct>70 && !approachShown){
+    approachShown=true;
+    document.getElementById('ap-msg').innerHTML='📋 <strong>Interested in our services?</strong><br><br>Our team is ready to give you a <strong>FREE detailed quote</strong> — respond in under 2 hours!';
+    document.getElementById('approachPop').classList.add('show');
+    setTimeout(()=>closeApproach(),10000);
+  }
+},{once:false});
+
+/* ══════════════════════════════════════════
+   AI CHATBOT — REAL CLAUDE AI
+══════════════════════════════════════════ */
+let chatOpen=false,aiMode=true,chatHistory=[],isTyping=false;
+
+const SYSTEM_PROMPT=`You are Sky, the AI project advisor for Skyrise Construction Infra (website: skyriseconstructioninfra.com, phone: +91 99620 74257).
+
+Your role: Help potential clients with construction questions, generate leads, and convert visitors into customers.
+
+Company info:
+- Name: Skyrise Construction Infra
+- Website: skyriseconstructioninfra.com
+- Phone/WhatsApp: +91 99620 74257
+- Email: info@skyriseconstructioninfra.com
+- Location: Mumbai, Maharashtra, India
+- Experience: 20+ years, 500+ projects, ISO 9001:2015 certified
+- Services: Residential, Commercial, Industrial Construction, Interior Design, Project Management, Renovation
+- Cities: 15+ cities across India
+
+Personality: Professional, warm, helpful, enthusiastic about construction. Call the user "Sir" or "Ma'am" respectfully.
+
+Your goals:
+1. Answer construction questions with real expert knowledge
+2. Understand client needs (project type, budget, location, timeline)
+3. Always offer a FREE consultation/quote
+4. Guide them to WhatsApp (+91 99620 74257) or the contact form
+5. For careers, mention WhatsApp or careers@skyriseconstructioninfra.com
+
+Keep responses concise (3-4 sentences max) and always end with a helpful next step or question.
+If asked about pricing, give general ranges (residential: ₹1500-3000/sq ft, commercial: ₹2000-4000/sq ft) and say the exact quote depends on specifications.
+Always be proactive in offering to connect them with the team.`;
+
+function toggleChat(){
+  chatOpen=!chatOpen;
+  document.getElementById('chatbot').classList.toggle('open',chatOpen);
+  if(chatOpen){
+    document.getElementById('chatNotif').style.display='none';
+    document.getElementById('waTip').style.display='none';
+    closeApproach();
+  }
+}
+
+function toggleAIMode(){
+  aiMode=!aiMode;
+  const btn=document.getElementById('cbModeBtn');
+  const ind=document.getElementById('aiIndicator');
+  if(aiMode){btn.textContent='🤖 AI';btn.classList.add('ai-on');ind.style.display='flex';}
+  else{btn.textContent='📋 FAQ';btn.classList.remove('ai-on');ind.style.display='none';}
+  addBot(aiMode?'🤖 <strong>AI Mode ON</strong> — I can now answer any construction question intelligently! Ask me anything.':'📋 <strong>FAQ Mode</strong> — Quick replies only. Toggle AI for full conversations.');
+}
+
+function addBot(html,isAI=false){
+  const b=document.getElementById('cbBody');
+  const m=document.createElement('div');m.className='msg bot';m.innerHTML=html;
+  if(isAI)m.innerHTML+=`<span class="ai-badge">⚡ Claude AI</span>`;
+  b.appendChild(m);b.scrollTop=b.scrollHeight;
+}
+
+function addUser(txt){
+  const b=document.getElementById('cbBody');const m=document.createElement('div');m.className='msg usr';m.textContent=txt;b.appendChild(m);b.scrollTop=b.scrollHeight;
+}
+
+function showTyping(){
+  const b=document.getElementById('cbBody');
+  const t=document.createElement('div');t.className='typing-msg';t.id='typingInd';t.innerHTML='<span></span><span></span><span></span>';
+  b.appendChild(t);b.scrollTop=b.scrollHeight;
+  document.getElementById('cbStatus').textContent='Sky is typing...';
+  document.getElementById('cbStatus').className='cb-status typing-st';
+}
+
+function hideTyping(){
+  const t=document.getElementById('typingInd');if(t)t.remove();
+  document.getElementById('cbStatus').textContent='Online · '+DOMAIN;
+  document.getElementById('cbStatus').className='cb-status';
+}
+
+/* AI API Call */
+async function callAI(userMsg){
+  chatHistory.push({role:'user',content:userMsg});
+  showTyping();isTyping=true;
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:300,
+        system:SYSTEM_PROMPT,
+        messages:chatHistory
+      })
+    });
+    const data=await res.json();
+    hideTyping();isTyping=false;
+    if(data.content&&data.content[0]){
+      const reply=data.content[0].text;
+      chatHistory.push({role:'assistant',content:reply});
+      addBot(reply.replace(/\n/g,'<br>'),true);
+      // Show lead capture after 3 AI messages
+      if(chatHistory.filter(m=>m.role==='assistant').length===3){
+        setTimeout(()=>{document.getElementById('cbLead').style.display='block';},1000);
+      }
+    }else{addBot('I\'m here to help! Please call us at <strong>+91 99620 74257</strong> or use the contact form below.',false);}
+  }catch(e){
+    hideTyping();isTyping=false;
+    addBot('Connection issue. Please call us directly: <strong>+91 99620 74257</strong> or WhatsApp us for instant response! 💬');
+  }
+}
+
+/* Quick Replies (instant) */
+const qrAnswers={
+  services:'We offer 6 premium services:\n\n🏠 Residential Construction\n🏢 Commercial Buildings\n🎨 Interior Design & Fit-Out\n📊 Project Management\n🔧 Renovation & Restoration\n🏭 Industrial Construction\n\nWhich interests you most, Sir?',
+  quote:'Getting a FREE quote is easy! 🎉\n\nJust fill our contact form below, or WhatsApp us directly:\n📱 +91 99620 74257\n\nWe respond within 2 hours with a full estimate — no obligation!',
+  cost:'Our pricing guide (approx.):\n\n🏠 Residential: ₹1,500–3,000/sq ft\n🏢 Commercial: ₹2,000–4,000/sq ft\n🏭 Industrial: ₹1,200–2,500/sq ft\n🎨 Interior: ₹800–2,500/sq ft\n\nExact quote depends on specs. Want a FREE detailed estimate?',
+  timeline:'Typical timelines:\n\n🏠 Residential (2-3BHK): 12–18 months\n🏢 Commercial complex: 18–36 months\n🏭 Industrial unit: 8–18 months\n🎨 Interior fit-out: 2–4 months\n\nWe guarantee on-time delivery with weekly updates!',
+  whatsapp:'Connecting you to WhatsApp now! 🚀\n\n📱 +91 99620 74257\n\nOur team replies within 5 minutes during business hours (9 AM – 7 PM).',
+  careers:'We\'re hiring! 🧑‍💼\n\nOpen positions:\n• Senior Civil Engineer\n• Project Manager\n• Interior Design Lead\n• Site Supervisors (Pan-India)\n\nApply via WhatsApp: +91 99620 74257\nOr email: careers@skyriseconstructioninfra.com'
+};
+
+function quickReply(key){
+  document.getElementById('cbQR').style.display='none';
+  const labels={services:'Our Services',quote:'Get Free Quote',cost:'Cost & Pricing',timeline:'Project Timeline',whatsapp:'WhatsApp Now',careers:'Career Opportunities'};
+  addUser(labels[key]);
+  if(key==='whatsapp'){
+    setTimeout(()=>{addBot(qrAnswers[key]);window.open(`https://wa.me/${WA}?text=Hello%20Skyrise!%20I%20visited%20${DOMAIN}%20and%20want%20to%20discuss%20a%20project.`,'_blank');},400);
+  } else {
+    setTimeout(()=>{
+      addBot(qrAnswers[key].replace(/\n/g,'<br>'));
+      if(aiMode && key!=='careers') chatHistory.push({role:'user',content:labels[key]},{role:'assistant',content:qrAnswers[key]});
+      setTimeout(()=>{document.getElementById('cbQR').style.display='flex';},1200);
+    },400);
+  }
+}
+
+async function sendMsg(){
+  const i=document.getElementById('cbIn');const v=i.value.trim();if(!v||isTyping)return;
+  document.getElementById('cbQR').style.display='none';
+  addUser(v);i.value='';
+  if(aiMode){await callAI(v);}
+  else{addBot(`Thanks! Our team will assist you shortly.\n📞 +91 99620 74257\n💬 WhatsApp us for fastest response!`);}
+  setTimeout(()=>{document.getElementById('cbQR').style.display='flex';},600);
+}
+
+/* Lead Capture → Auto WhatsApp */
+function submitLead(){
+  const phone=document.getElementById('leadPhone').value.trim();
+  const name=document.getElementById('leadName').value.trim();
+  if(!phone){alert('Please enter your phone number!');return;}
+  document.getElementById('cbLead').style.display='none';
+  addBot(`✅ <strong>Perfect!</strong> Connecting you to WhatsApp now!\n\nOur team will message you within 5 minutes, ${name||'Sir'}!`);
+  const msg=encodeURIComponent(`🏗️ *Lead from ${DOMAIN} Chatbot*\n\nName: ${name||'Not provided'}\nPhone: ${phone}\n\nThey chatted with Sky AI assistant and want to connect!`);
+  setTimeout(()=>window.open(`https://wa.me/${WA}?text=${msg}`,'_blank'),1000);
+}
+
+/* Auto Chat Open */
+setTimeout(()=>{
+  if(!chatOpen){
+    document.getElementById('chatNotif').style.display='flex';
+    // Show notification dot
+  }
+},4000);
+
+/* Auto open chatbot after 12s */
+setTimeout(()=>{
+  if(!chatOpen){
+    toggleChat();
+    setTimeout(()=>{
+      addBot('🎁 <strong>Welcome Offer!</strong> Get a <strong>FREE</strong> professional site visit + consultation for your project.<br><br>Ask me anything — I\'m powered by Claude AI and know everything about construction! 🏗️',true);
+    },900);
+  }
+},12000);
+
+/* WA tip auto hide */
+setTimeout(()=>{const t=document.getElementById('waTip');if(t){t.style.opacity='0';t.style.transition='opacity .6s';}},7000);
+setTimeout(()=>{const t=document.getElementById('waTip');if(t)t.remove();},7700);
+</script>
+</body>
+</html>
